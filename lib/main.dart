@@ -11,7 +11,11 @@ class MyApp extends StatelessWidget { //my custom class name is MyApp which is a
        child: Center(//Center widget which aligns all its child content to middle of Screen
                 child:Text(
                   "Hello World", // comma to separate between arguments of Text Widget
-                    textDirection: TextDirection.ltr //rich text widget require a directionality widget ancestor or else throws error
+                    textDirection: TextDirection.ltr, //rich text widget require a directionality widget ancestor or else throws error
+                    style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.blue
+                    )
                 )
        )
      );
