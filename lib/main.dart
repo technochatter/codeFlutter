@@ -8,7 +8,12 @@ class MyApp extends StatelessWidget { //my custom class name is MyApp which is a
      //return the app UI from this method
      return Container(//create a container to hold all our home page contents
        //For nesting elements or containers need to declare them as Child
-       child: Center()//Center widget which aligns all its child content to middle of Screen
+       child: Center(//Center widget which aligns all its child content to middle of Screen
+                child:Text(
+                  "Hello World", // comma to separate between arguments of Text Widget
+                    textDirection: TextDirection.ltr //rich text widget require a directionality widget ancestor or else throws error
+                )
+       )
      );
    }
 
