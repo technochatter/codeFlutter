@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget { //my custom class name is MyApp which is a
   Widget build(BuildContext context) { //Flutter calls this method to load the application content
      //return the app UI from this method
      return Container(//create a container to hold all our home page contents
+       decoration: BoxDecoration(color: Colors.white),
        //For nesting elements or containers need to declare them as Child
        child: Center(//Center widget which aligns all its child content to middle of Screen
                 child:Text(
