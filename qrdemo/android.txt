@@ -1,0 +1,22 @@
+Flutter’s material library here because it contains lots of beautiful reusable widgets.
+
+void main() => runApp(MyApp());
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(color: Colors.black),
+      child: Center(
+        child: Text(
+          'The Toilet is Empty Now! You may go.',
+          textDirection: TextDirection.ltr,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 32,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
+  }
